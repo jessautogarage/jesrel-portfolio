@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jesrel Agang | Full Stack Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="assets/css/app.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg ">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Jesrel Agang</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -17,13 +18,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <a href="#" class="btn btn-brand ms-3">Download CV</a>
+        <a href="#" class="btn btn-brand ms-3 animate__animated animate__swing animate__infinite">Download CV</a>
       </div>
     </div>
   </nav>
@@ -32,20 +33,20 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center">
-          <img src="assets/img/image1.png" alt="Jesrel Agang" class="img-fluid" style="max-height: 700px;">
+          <img src="assets/img/image1.png" alt="Jesrel Agang" class="img-fluid animate__animated animate__bounceInLeft" style="max-height: 700px;">
         </div>
         <div class="col-md-6">
-          <h1>Hello, <span style="color: #ff0057">I'm</span> Jesrel Agang</h1>
-          <h4>Web Developer | SEO & CRM Automation | Virtual Assistant | Funnel Designing</h4>
-          <p class="mt-4"><i>I help businesses grow by building high-performance websites and automating their systems. 
+          <h1 class="animate__animated animate__bounceInRight">Hello, <span style="color: #ff0057">I'm</span> Jesrel Agang</h1>
+          <h4 class="animate__animated animate__bounceInRight">Web Developer | SEO & CRM Automation | Virtual Assistant | Funnel Designing</h4>
+          <p class="mt-4 animate__animated animate__bounceInUp"><i>I help businesses grow by building high-performance websites and automating their systems. 
             My services include full stack development, technical SEO, and CRM automation using tools like WordPress, 
             GoHighLevel, Zapier, and Make. I optimize websites for speed, search visibility, and user experience. 
             Ensuring you attract more leads and convert them efficiently. Whether you need a website, a sales funnel, 
             or a tech-savvy virtual assistant, I'm here to streamline your digital operations</i></p>
-          <div class="social-icons my-4">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-youtube"></i></a>
+          <div class="social-icons my-4 animate__animated animate__flipInY">
+            <a href="https://www.facebook.com/profile.php?id=61575761345844" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/jesrelagang/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@CodersLab-j6n" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
       </div>
@@ -74,47 +75,49 @@
   <section id="services" class="section">
     <div class="container">
       <h2 class="text-white mb-5 text-center">What I Do</h2>
+
+      <!-- Replace all service cards inside #services with this -->
       <div class="row g-4">
         <div class="col-md-4">
           <div class="service-card h-100">
             <i class="bi bi-window"></i>
-            <h5>Website Development</h5>
-            <p>Responsive, user-friendly websites tailored to your brand and business needs.</p>
+            <h5 id="webdev-title">Website Development</h5>
+            <p id="webdev-desc" class="animate__animated animate__fadeIn"></p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card h-100">
             <i class="bi bi-phone"></i>
-            <h5>Mobile Development</h5>
-            <p>Modern web and mobile apps built with clean code and seamless UX.</p>
+            <h5 id="mobile-title">Mobile Development</h5>
+            <p id="mobile-desc" class="animate__animated animate__fadeIn"></p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card h-100">
             <i class="bi bi-arrow-repeat"></i>
-            <h5>CRM & Automation</h5>
-            <p>Automate workflows using GoHighLevel, Zapier, Make, and Google Workspace.</p>
+            <h5 id="automation-title">CRM & Automation</h5>
+            <p id="automation-desc" class="animate__animated animate__fadeIn"></p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card h-100">
             <i class="bi bi-bar-chart"></i>
-            <h5>SEO</h5>
-            <p>Automate workflows using GoHighLevel, Zapier, Make, and Google Workspace.</p>
+            <h5 id="seo-title">SEO</h5>
+            <p id="seo-desc" class="animate__animated animate__fadeIn"></p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card h-100">
             <i class="bi bi-funnel"></i>
-            <h5>Funnel Designing</h5>
-            <p>Automate workflows using GoHighLevel, Zapier, Make, and Google Workspace.</p>
+            <h5 id="funnel-title">Funnel Designing</h5>
+            <p id="funnel-desc" class="animate__animated animate__fadeIn"></p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card h-100">
             <i class="bi bi-headset"></i>
-            <h5>Virtual Assistant</h5>
-            <p>Automate workflows using GoHighLevel, Zapier, Make, and Google Workspace.</p>
+            <h5 id="va-title">Virtual Assistant</h5>
+            <p id="va-desc" class="animate__animated animate__fadeIn"></p>
           </div>
         </div>
       </div>
@@ -174,44 +177,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const form = document.getElementById("contact-form");
-    const button = document.getElementById("submit-btn");
-    const btnText = document.getElementById("btn-text");
-    const btnSpinner = document.getElementById("btn-spinner");
-  
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-  
-      // Show spinner and disable button
-      button.disabled = true;
-      btnText.textContent = "Sending...";
-      btnSpinner.classList.remove("d-none");
-  
-      const formData = new FormData(form);
-  
-      fetch(form.action, {
-        method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json"
-        }
-      })
-      .then(response => {
-        if (response.ok) {
-          window.location.href = "https://jessautogarage.github.io/jesrel-portfolio/thank-you.html"; // Change URL to your thank-you page
-        } else {
-          throw new Error("Submission failed.");
-        }
-      })
-      .catch(error => {
-        alert("There was a problem submitting the form.");
-        button.disabled = false;
-        btnText.textContent = "Send Message";
-        btnSpinner.classList.add("d-none");
-      });
-    });
-  </script>
+  <script src="assets/js/app.js"></script>
   
 </body>
 </html>

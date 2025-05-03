@@ -1,90 +1,122 @@
 body {
-   background-color: #282b30;
-   color: #fff;
-   font-family: 'Segoe UI', sans-serif;
- }
- .navbar {
-   background-color: #1e1e1e;
-   padding: 2em 0;
- }
- .nav-link, .navbar-brand {
-   color: #fff;
- }
- .nav-link:hover {
-   color: #ff0057;
- }
- .hero, .section {
-   padding: 100px 0;
- }
- .hero h1 {
-   font-size: 3rem;
-   font-weight: bold;
- }
- .hero h4 {
-   font-weight: 400;
-   color: #ccc;
- }
- .btn-brand {
-   background-color: #ff0057;
-   border: none;
-   color: #fff;
- }
- .btn-brand:hover {
-   background-color: #e6004f;
- }
- .stats .col {
-   text-align: center;
-   padding: 20px;
- }
- .stats .number {
-   font-size: 2rem;
-   font-weight: bold;
-   color: #fff;
- }
- .stats .label {
-   color: #bbb;
- }
- .social-icons a {
-   font-size: 1.2rem;
-   color: #fff;
-   margin-right: 15px;
- }
- .social-icons a:hover {
-   color: #ff0057;
- }
- .service-card {
-   background-color: #1f1f1f;
-   border-radius: 10px;
-   padding: 30px;
-   text-align: center;
-   transition: all 0.3s ease;
-   height: 100%;
- }
- .service-card:hover {
-   transform: translateY(-5px);
-   box-shadow: 0 0 10px rgba(255, 0, 87, 0.3);
- }
- .service-card i {
-   font-size: 2rem;
-   color: #ff0057;
-   margin-bottom: 15px;
- }
- .footer {
-   background-color: #1e1e1e;
-   padding: 50px 0;
-   text-align: center;
- }
- .contact-box {
-   background-color: #1f1f1f;
-   padding: 20px;
-   border-radius: 8px;
- }
- .form-control {
-   background-color: #2b2b2b;
-   color: #818181;
-   border: none;
- }
+  background-color: #282b30;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
 
- input, textarea {
+.navbar {
+  background-color: #1e1e1e;
+  padding: 2em 0;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #ff0057;
+}
+
+.hero,
+.section {
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero h4 {
+  font-weight: 400;
+  color: #ccc;
+}
+
+.btn-brand {
+  background-color: #ff0057;
+  border: none;
+  color: #fff;
+}
+
+.btn-brand:hover {
+  background-color: #e6004f;
+}
+
+.stats .col {
+  text-align: center;
+  padding: 20px;
+}
+
+.stats .number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.stats .label {
+  color: #bbb;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.social-icons a:hover {
+  color: #ff0057;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 0, 87, 0.6);
+}
+
+.service-card i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff0057;
+}
+
+.service-card h5,
+.service-card p {
+  color: #000;
+}
+
+.service-card:hover p.animate__animated {
+  animation: none !important;
+}
+
+.footer {
+  background-color: #1e1e1e;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-box {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-control {
+  background-color: #2b2b2b;
+  color: #818181;
+  border: none;
+}
+
+input,
+textarea {
   color: #212529 !important; /* Bootstrap dark text */
 }
