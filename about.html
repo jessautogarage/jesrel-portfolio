@@ -1,84 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recent Work | Jesrel Agang</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #121212;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .section {
-      padding: 100px 0;
-    }
-    .work-card {
-      background-color: #1f1f1f;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-    .work-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 15px rgba(255, 0, 87, 0.3);
-    }
-    .work-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .work-card h6 {
-      padding: 15px;
-      font-weight: 600;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Jesrel Agang</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="assets/css/app.css" rel="stylesheet"/>
 </head>
 <body>
-  <section class="section">
+
+  <!-- Animated Background Waves -->
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <p class="text-danger">AWARD WINNING WORK</p>
-      <h2 class="mb-5">Recent Works</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="work-card">
-            <img src="https://via.placeholder.com/400x250" alt="Work 1">
-            <h6>Creative Landing Page</h6>
-          </div>
+      <a class="navbar-brand fw-bold" href="#">CodersLab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="hero">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center">
+          <img src="assets/img/image1.png" alt="Jesrel Agang" class="img-fluid rounded-circle animate__animated animate__fadeInLeft" style="max-height: 400px;">
         </div>
-        <div class="col-md-4">
-          <div class="work-card">
-            <img src="https://via.placeholder.com/400x250" alt="Work 2">
-            <h6>Business Website</h6>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-card">
-            <img src="https://via.placeholder.com/400x250" alt="Work 3">
-            <h6>Automation Dashboard</h6>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-card">
-            <img src="https://via.placeholder.com/400x250" alt="Work 4">
-            <h6>Mobile App Interface</h6>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-card">
-            <img src="https://via.placeholder.com/400x250" alt="Work 5">
-            <h6>Funnel Design Project</h6>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-card">
-            <img src="https://via.placeholder.com/400x250" alt="Work 6">
-            <h6>SEO Landing Page</h6>
+        <div class="col-md-7">
+          <h1 class="animate__animated animate__fadeInRight mb-3">About <span style="color: #ff0057">Me</span></h1>
+          <p class="animate__animated animate__fadeInUp">
+            I'm <strong>Jesrel Agang</strong>, a passionate Full Stack Developer with expertise in WordPress, automation tools, SEO, and funnel design. My journey in the digital world began with a mission: to help businesses grow through powerful, scalable, and efficient web solutions.
+          </p>
+          <p class="animate__animated animate__fadeInUp">
+            I specialize in streamlining operations by connecting platforms like GoHighLevel, Zapier, and Make, and I love solving problems with code. With a strong background in CRM, SEO, and performance optimization, I create systems that convert and scale.
+          </p>
+          <div class="social-icons mt-4 animate__animated animate__fadeInUp">
+            <a href="https://www.facebook.com/profile.php?id=61575761345844" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/jesrelagang/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@CodersLab-j6n" target="_blank"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center text-white py-4 mt-5">
+    <p>© 2025 Jesrel Agang | Built with passion and Bootstrap</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
