@@ -101,21 +101,17 @@ setInterval(rotateAll, 8000);
 
 
 
-window.addEventListener('load', () => {
-    const timezoneInput = document.getElementById('timezone');
-    if (timezoneInput) {
-      timezoneInput.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    }
-  });
+const fadeEls = document.querySelectorAll('.fade-in');
 
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+    fadeEls.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < windowHeight - 100) {
+        el.classList.add('visible');
+      }
+    });
+  }
 
- // Show popup after 4 seconds
- window.addEventListener('load', () => {
-   setTimeout(() => {
-     document.getElementById("discoveryPopup").style.display = "flex";
-   }, 4000);
- });
-
- function closeDiscoveryPopup() {
-   document.getElementById("discoveryPopup").style.display = "none";
- }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);

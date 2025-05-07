@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/blog.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .blog-card {
+      background-color: #1e1e1e;
+      border-left: 5px solid #ff0057;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlideUp 0.8s ease forwards;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #ff0057aa;
+    }
+
+    .blog-card h5 {
+      color: #ffffff;
+    }
+
+    .blog-card .date {
+      font-size: 0.9rem;
+      color: #bbbbbb;
+    }
+
+    @keyframes fadeSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">CodersLab</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="coming-soon.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="coming-soon.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="coming-soon.html">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="coming-soon.html">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+          <a href="#" class="btn btn-brand ms-3 animate__animated animate__swing animate__infinite">Download CV</a>
+        </div>
+      </div>
+    </nav>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-5">My Blog</h2>
+    <div class="row g-4">
+      <div class="col-md-6" style="animation-delay: 0.1s;">
+        <div class="blog-card">
+          <h5>How I Built My Portfolio Website</h5>
+          <p class="date">April 12, 2024</p>
+          <p>A walk-through of tools, frameworks, and tips I used to build my personal site from scratch.</p>
+          <a href="#" class="text-decoration-none text-pink">Read more →</a>
+        </div>
+      </div>
+      <div class="col-md-6" style="animation-delay: 0.2s;">
+        <div class="blog-card">
+          <h5>Top 5 VS Code Extensions I Use Daily</h5>
+          <p class="date">March 29, 2024</p>
+          <p>Speed up your workflow with these essential extensions for frontend developers.</p>
+          <a href="#" class="text-decoration-none text-pink">Read more →</a>
+        </div>
+      </div>
+      <div class="col-md-6" style="animation-delay: 0.3s;">
+        <div class="blog-card">
+          <h5>JavaScript Tricks Every Beginner Should Know</h5>
+          <p class="date">February 15, 2024</p>
+          <p>Learn about scope, closures, and practical tips for debugging JavaScript.</p>
+          <a href="#" class="text-decoration-none text-pink">Read more →</a>
+        </div>
+      </div>
+      <div class="col-md-6" style="animation-delay: 0.4s;">
+        <div class="blog-card">
+          <h5>Designing with Figma: My Workflow</h5>
+          <p class="date">January 10, 2024</p>
+          <p>A guide to creating clean, developer-friendly UI designs in Figma.</p>
+          <a href="#" class="text-decoration-none text-pink">Read more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const cards = document.querySelectorAll('.blog-card');
+    const observer = new IntersectionObserver((entriesList) => {
+      entriesList.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationDelay = entry.target.parentElement.style.animationDelay || '0s';
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
+</body>
+</html>

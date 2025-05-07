@@ -1,0 +1,127 @@
+.navbar {
+   background-color: #1e1e1e;
+   padding: 2em 0;
+ }
+ 
+ .nav-link,
+ .navbar-brand {
+   color: #fff;
+ }
+ 
+ .nav-link:hover {
+   color: #ff0057;
+ }
+
+ body {
+   background-color: #121212;
+   color: #f8f9fa;
+   font-family: Arial, sans-serif;
+ }
+
+ .timeline {
+   position: relative;
+   padding: 2rem 0;
+ }
+
+ .timeline::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 100%;
+   width: 4px;
+   background: #ff0057;
+ }
+
+ .timeline-item {
+   position: relative;
+   width: 50%;
+   padding: 1rem;
+   box-sizing: border-box;
+ }
+
+ .timeline-item .content {
+   background: #1e1e1e;
+   border-left: 5px solid #ff0057;
+   border-radius: 0.75rem;
+   padding: 1rem 1.25rem;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   position: relative;
+   opacity: 0;
+   transform: translateY(30px);
+   animation: fadeSlideUp 0.8s ease forwards;
+ }
+
+ .timeline-item.left {
+   left: 0;
+   text-align: right;
+ }
+
+ .timeline-item.right {
+   left: 50%;
+ }
+
+ .timeline-item.left .content::after,
+ .timeline-item.right .content::after {
+   content: "";
+   position: absolute;
+   top: 1rem;
+   width: 12px;
+   height: 12px;
+   background: #ff0057;
+   border-radius: 50%;
+ }
+
+ .timeline-item.left .content::after {
+   right: -25px;
+ }
+
+ .timeline-item.right .content::after {
+   left: -25px;
+ }
+
+ @keyframes fadeSlideUp {
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+ @media (max-width: 768px) {
+   .timeline-item {
+     width: 100%;
+     left: 0 !important;
+     text-align: left;
+   }
+
+   .timeline::before {
+     left: 10px;
+   }
+
+   .timeline-item .content::after {
+     left: -15px !important;
+     right: auto !important;
+   }
+ }
+
+ h2, h5, h6 {
+   color: #ffffff;
+ }
+
+ .text-muted {
+   color: #bbbbbb !important;
+ }
+
+ .skill-card {
+   background-color: #1e1e1e;
+   color: #fff;
+   border-left: 4px solid #ff0057;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   cursor: default;
+ }
+
+ .skill-card:hover {
+   transform: translateY(-6px);
+   box-shadow: 0 0 15px #ff0057aa;
+ }
