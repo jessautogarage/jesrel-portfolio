@@ -270,6 +270,26 @@
     </div>
   </section>
 
+  <!-- Discovery Call Popup -->
+  <div id="discoveryPopup" class="popup-overlay">
+    <div class="popup-content text-dark bg-white p-4 rounded shadow">
+      <button type="button" class="btn-close float-end" aria-label="Close" onclick="closeDiscoveryPopup()"></button>
+      <h4 class="mb-3">Book a Free Discovery Call</h4>
+      <p class="mb-3">Let's chat about your project and how I can help you succeed.</p>
+      <form action="https://hook.us2.make.com/wc31hjaamu5b67newk23n2xit1emgisp" method="POST">
+        <input type="text" name="name" class="form-control bg-white text-dark mb-2" style="border: 1px solid black;" placeholder="Your Name" required>
+        <input type="email" name="email" class="form-control bg-white text-dark mb-2" style="border: 1px solid black;" placeholder="Your Email" required>
+        <input type="date" name="preferred_date" class="form-control bg-white text-dark mb-2" style="border: 1px solid black;" required>
+        <input type="time" name="preferred_time" class="form-control bg-white text-dark mb-2" style="border: 1px solid black;" required>
+        <input type="hidden" id="timezone" name="timezone">
+        <textarea name="message" class="form-control bg-white text-dark mb-3" rows="3" style="border: 1px solid black;" placeholder="What would you like to discuss?" required></textarea>
+        <button type="submit" class="btn btn-primary w-100">Book Call</button>
+      </form>      
+    </div>
+  </div>
+
+
+
   <footer class="footer text-center text-white py-4 mt-5">
     <p>© 2025 Jesrel Agang | Built with passion and Bootstrap</p>
   </footer>

@@ -98,3 +98,24 @@ function rotateAll() {
 
 rotateAll();
 setInterval(rotateAll, 8000);
+
+
+
+window.addEventListener('load', () => {
+    const timezoneInput = document.getElementById('timezone');
+    if (timezoneInput) {
+      timezoneInput.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    }
+  });
+
+
+ // Show popup after 4 seconds
+ window.addEventListener('load', () => {
+   setTimeout(() => {
+     document.getElementById("discoveryPopup").style.display = "flex";
+   }, 4000);
+ });
+
+ function closeDiscoveryPopup() {
+   document.getElementById("discoveryPopup").style.display = "none";
+ }
