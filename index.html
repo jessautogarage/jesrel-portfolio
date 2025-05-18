@@ -40,7 +40,7 @@
     </div>
   </nav>
 
-  <section class="hero">
+  <section class="hero animate-on-scroll">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center">
@@ -83,9 +83,10 @@
     </div>
   </section> -->
 
-  <section id="services" class="section py-5">
+  <section id="services" class="section py-5 animate-on-scroll">
     <div class="container">
-      <h2 class="text-white mb-5 text-center"><b>What I Do</b></h2>
+      <h2 class="text-white mb-5 text-center"><b>What I Do?</b></h2>
+      <h1 class="text-white mb-5 text-center"><b>Professional Skills</b></h1>
 
       <!-- Replace all service cards inside #services with this -->
       <div class="row g-4">
@@ -132,7 +133,55 @@
         <div class="col-md-4">
           <div class="service-card h-100">
             <i class="bi bi-headset"></i>
+            <h5 id="va-title">Peneration Testing</h5>
+            <p id="va-desc" class="animate__animated animate__fadeIn"></p>
+            <a href="services.html" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <i class="bi bi-headset"></i>
+            <h5 id="va-title">Cloud Support</h5>
+            <p id="va-desc" class="animate__animated animate__fadeIn"></p>
+            <a href="services.html" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <i class="bi bi-headset"></i>
             <h5 id="va-title">Virtual Assistant</h5>
+            <p id="va-desc" class="animate__animated animate__fadeIn"></p>
+            <a href="services.html" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <i class="bi bi-headset"></i>
+            <h5 id="va-title">IT Service Desk</h5>
+            <p id="va-desc" class="animate__animated animate__fadeIn"></p>
+            <a href="services.html" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <i class="bi bi-headset"></i>
+            <h5 id="va-title">Technical Support</h5>
+            <p id="va-desc" class="animate__animated animate__fadeIn"></p>
+            <a href="services.html" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <i class="bi bi-headset"></i>
+            <h5 id="va-title">Customer Service</h5>
+            <p id="va-desc" class="animate__animated animate__fadeIn"></p>
+            <a href="services.html" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <i class="bi bi-headset"></i>
+            <h5 id="va-title">Sales and Marketing</h5>
             <p id="va-desc" class="animate__animated animate__fadeIn"></p>
             <a href="services.html" class="btn btn-primary mt-3">Learn More</a>
           </div>
@@ -141,7 +190,7 @@
     </div>
   </section>
 
-  <section class="container py-5">
+  <section class="container py-5 animate-on-scroll">
     <h2 class="text-white text-center mb-4 animate__animated animate__fadeInDown"><b>My Featured Projects</b></h2>
     <div class="row g-4">
 
@@ -219,7 +268,7 @@
   </section>
 
 
-  <section class="testimonials-section py-5" style="background-color: #f3f3f3;">
+  <section class="testimonials-section py-5 animate-on-scroll" style="background-color: #f3f3f3;">
     <div class="container">
       <h2 class="text-center mb-5">Testimonials</h2>
       <div class="row g-4">
@@ -232,16 +281,17 @@
   
 
 
-  <section id="contact" class="section pt-5">
+  <section id="contact" class="section pt-5 animate-on-scroll">
     <div class="container">
       <h2 class="text-white mb-4 text-center"><b>Contact Me</b></h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="contact-box text-white">
             <p><i class="bi bi-geo-alt"></i> General Santos City, South Cotabato, PH</p>
+            <p><i class="bi bi-geo-alt"></i> Jacinto Boulevard, Davao City, PH</p>
             <p><i class="bi bi-telephone"></i> +63 915-074-9403</p>
             <p><i class="bi bi-whatsapp"></i> +63 915-074-9403</p>
-            <p><i class="bi bi-envelope"></i> jesrelagang94@gmail.com</p>
+            <p><i class="bi bi-envelope"></i> jessautogarage@gmail.com</p>
             <p><i class="bi bi-envelope"></i> jesrelagang94@gmail.com</p>
           </div>
         </div>
@@ -300,9 +350,31 @@
 
 
 
-  <footer class="footer text-center text-white py-4 mt-5">
+  <footer class="footer text-center bg-black text-white py-4 mt-5">
     <p>© 2025 Jesrel Agang | Built with passion and Bootstrap</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".animate-on-scroll");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible"); // re-animates on scroll up
+          }
+        });
+      }, {
+        threshold: .500
+      });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
